@@ -1,41 +1,121 @@
-var userNumber = 100;
-var counter = 0;
-var maxTries = 1;
-var randomNumbers = Math.floor(Math.random() * userNumber) + 1;
-while (attempts = randomNumbers) {
-    let attempts = prompt("Number To Daalo Mama ");
-    counter += 1;
-    if (counter > maxTries) {
-        document.write("You Have No More");
-        break
-    }
-    if (attempts == randomNumbers) {
-        document.write("Congratulation You Still Your Life Again");
-        document.write(" The Random Number Was" + randomNumbers);
-        document.write(" It Took You" + counter);
-    }
+// var userNumber = 100;
+// var counter = 0;
+// var maxTries = 1;
+// var randomNumbers = Math.floor(Math.random() * userNumber) + 1;
+// while (attempts = randomNumbers) {
+//     let attempts = prompt("Number To Daalo Mama ");
+//     counter += 1;
+//     if (counter > maxTries) {
+//         document.write("You Have No More");
+//         break
+//     }
+//     if (attempts == randomNumbers) {
+//         document.write("Congratulation You Still Your Life Again");
+//         document.write(" The Random Number Was" + randomNumbers);
+//         document.write(" It Took You" + counter);
+//     }
+// }
+
+function easyLevel() {
+    let jokerNumber = document.querySelector("input").value;
+    // let selfTry;
+    // let maxTries = 1;
+    let randomNumber = parseInt(Math.random() * 500);
+    if (jokerNumber == false) {
+        alert("Joker Says Enter Your Number");
+    } else {
+        if (jokerNumber > randomNumber) {
+            alert("Joker Says To Big");
+        } else if (jokerNumber < randomNumber) {
+            alert("Joker Says You Coming Soon Your Right");
+        // } else if(selfTry == maxTries){
+        //     alert("Now Joker Kill U reload and Try Again");
+        } 
+        else if (jokerNumber === randomNumber) {
+            alert(" Joker Says Congratulation Finally You Guess  Your Right times");
+        }
 }
-// let userNumber = 100;
-// let counter = 0;
-// let maxTries = 1;
-// let randomNumbers = Math.floor(Math.random() * userNumber) + 1;
-// function guess(Number) {
-//     let attempts = randomNumbers;
-//     if (name > 0) {
-//         alert("Please Enter Number");
+}
+function mediumLevel() {
+    let jokerNumber = document.querySelector("input").value;
+    let randomNumber = parseInt(Math.random() * 1000);
+    if (jokerNumber == false) {
+        alert("Joker Says Enter Your Number");
+    } else {
+        if (jokerNumber > randomNumber) {
+            alert("Joker Says To Big");
+        } else if (jokerNumber < randomNumber) {
+            alert("Joker Says You Coming Soon Your Right");
+        } 
+        else if (jokerNumber === randomNumber) {
+            alert(" Joker Says Congratulation Finally You Guess  Your Right times");
+        }
+}
+}
+// else if(){
+//     alert(" The Random Number Was" + randomNumbers );
+// }
 
-//     }
-//     else if (counter >= maxTries) {
-//         alert("You Have No More");
+// let attempt;
+// let aNumber;
 
-//     }
-//     else if (attempts == randomNumbers) {
-//         alert("Congratulation You Still Your Life Again");
-//         alert(" The Random Number Was"+ randomNumbers );
-//         alert("It Took You" + counter );
+// function easy() {
+//     attempt = 0;
+//     aNumber = parseInt(Math.random() * 500);
+//     document.getElementById('#levels').classList.remove('showLevels');
+//     document.getElementById('#levels').classList.add('hideLevels');
+// }
 
+// function medium() {
+//     attempt = 0;
+//     aNumber = parseInt(Math.random() * 1000);
+//     document.getElementById('#levels').classList.remove('showLevels');
+//     document.getElementById('#levels').classList.add('hideLevels');
+// }
+
+// function hard() {
+//     attempt = 0;
+//     aNumber = parseInt(Math.random() * 5000);
+//     document.getElementById('#levels').classList.remove('showLevels');
+//     document.getElementById('#levels').classList.add('hideLevels');
+// }
+
+// function showLevels() {
+//     document.getElementById('#levels').classList.remove('hideLevels');
+//     document.getElementById('#levels').classList.add('showLevels');
+
+// }
+
+// function check() {
+//     let userNumber = parseInt(document.getElementById("input").value);
+//     attempt++;
+//     if (attempt < 11) {
+//         if (userNumber < aNumber) {
+//             document.getElementById('#result').innerHTML = "Try Bigger..";
+//         } else if (userNumber > aNumber) {
+//             document.getElementById('#result').innerHTML = "Try Smaller..";
+//         } else {
+//             document.getElementById('#result').innerHTML = "Congratulations!! You did it in " + attempt + ' times';
+//         }
+
+//     } else {
+//         alert('Joker Win You Lost Joker Smart With You');
 //     }
-    // else if(){
-    //     alert(" The Random Number Was" + randomNumbers );
-    // }
+// }
+// function easyLevel() {
+//     let enterNumber = document.querySelector("input").innerHTML
+//     let trySelf = 0;
+//     trySelf+1;
+//     let guessNumber = parseInt(Math.random() * 101);
+//     if (enterNumber = false) {
+//         alert("please enter the number for best result");
+//     } else {
+//         if (enterNumber > guessNumber) {
+//             alert("too big");
+//         } else if (enterNumber < guessNumber) {
+//             alert("too small");
+//         } else if (enterNumber === guessNumber) {
+//             alert("Congratulation Finally You guess after Try" + trySelf + "times");
+//         }
+// }
 // }
