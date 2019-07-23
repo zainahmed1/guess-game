@@ -18,37 +18,55 @@
 
 function easyLevel() {
     let jokerNumber = document.querySelector("input").value;
-    // let selfTry;
-    // let maxTries = 1;
-    let randomNumber = parseInt(Math.random() * 500);
+    let trySelf=0
+    trySelf+1;
+    let randomNumber = parseInt(Math.random() * 100);
     if (jokerNumber == false) {
         alert("Joker Says Enter Your Number");
     } else {
         if (jokerNumber > randomNumber) {
             alert("Joker Says To Big");
         } else if (jokerNumber < randomNumber) {
-            alert("Joker Says You Coming Soon Your Right");
-        // } else if(selfTry == maxTries){
-        //     alert("Now Joker Kill U reload and Try Again");
+            alert("You Coming Soon To Beat Joker Score");
         } 
-        else if (jokerNumber === randomNumber) {
-            alert(" Joker Says Congratulation Finally You Guess  Your Right times");
+        else if (jokerNumber == randomNumber) {
+            alert(" Joker Says Congratulation Finally You Guess  Your Right"+trySelf+ "times");
         }
 }
 }
 function mediumLevel() {
     let jokerNumber = document.querySelector("input").value;
-    let randomNumber = parseInt(Math.random() * 1000);
+    let trySelf = 0;
+    trySelf+1;
+    let randomNumber = parseInt(Math.random() * 200);
     if (jokerNumber == false) {
         alert("Joker Says Enter Your Number");
     } else {
         if (jokerNumber > randomNumber) {
             alert("Joker Says To Big");
         } else if (jokerNumber < randomNumber) {
-            alert("Joker Says You Coming Soon Your Right");
+            alert(" You Coming Soon To Beat Joker Score");
         } 
-        else if (jokerNumber === randomNumber) {
-            alert(" Joker Says Congratulation Finally You Guess  Your Right times");
+        else if (jokerNumber == randomNumber) {
+            alert(" Congratulation Finally You Beat Joker"+ trySelf+ "times");
+        }
+}
+}
+function hardLevel() {
+    let jokerNumber = document.querySelector("input").value;
+    let trySelf=0
+    trySelf+1;
+    let randomNumber = parseInt(Math.random() * 420);
+    if (jokerNumber == false) {
+        alert("Joker Says Enter Your Number");
+    } else {
+        if (jokerNumber > randomNumber) {
+            alert("Joker Says To Big");
+        } else if (jokerNumber < randomNumber) {
+            alert("You Coming Soon To Beat Joker Score");
+        } 
+        else if (jokerNumber == randomNumber) {
+            alert("  Congratulation Finally You Guess  Your Right "+trySelf+"times");
         }
 }
 }
