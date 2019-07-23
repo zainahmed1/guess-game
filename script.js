@@ -20,11 +20,11 @@ function easyLevel() {
 let mediumRandomNumber = parseInt(Math.random() * 200);
 let mediumTrySelf = 0;
 function mediumLevel() {
-    let jokerNumber = document.querySelector("input").value;  
-    trySelf ++;
+    let jokerNumber = document.querySelector("input").value;
+    mediumTrySelf++;
     if (jokerNumber == false) {
         alert("Joker Says Enter Your Number");
-        
+
     } else {
         if (jokerNumber > mediumRandomNumber) {
             alert("Joker Says To Big");
@@ -40,7 +40,7 @@ let hardRandomNumber = parseInt(Math.random() * 420);
 let hardTrySelf = 0
 function hardLevel() {
     let jokerNumber = document.querySelector("input").value;
-    trySelf ++; 
+    hardTrySelf++;
     if (jokerNumber == false) {
         alert("Joker Says Enter Your Number");
     } else {
