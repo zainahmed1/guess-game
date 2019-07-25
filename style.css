@@ -1,6 +1,6 @@
 body{
-    width: 96%;
-    height: 106vh;
+    width: 99%;
+    height: 101vh;
     background-image:url("images/back6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,18 +11,24 @@ h1{
     font-size:3.5em;
     margin: 0px;
     letter-spacing: 3px;
-    color:#00ac1f; 
+    color:#d1f5f5;; 
     text-decoration: underline;
     text-decoration-color: rgb(224, 219, 219);
+     background: -webkit-linear-gradient(#d1f5f5,  #75e2ab, #d1f5f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h2{
     font-family: 'Lobster', cursive;
     font-size:3em;
     margin-top: 0px;
     letter-spacing: 5px; 
-    color:#00ac1f;
+    color:#d1f5f5;
     text-decoration-line: underline;
-    text-decoration-color: rgb(224, 219, 219);
+    text-decoration-color: rgb(224, 219, 219) ;
+    background: -webkit-linear-gradient(#d1f5f5,  #75e2ab, #d1f5f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }   
 button{
       width:300px;
@@ -32,14 +38,15 @@ button{
       margin-top:50px;
       border-radius:100%;
       font-size:2.2em;
+      color:lightslategray;
       font-family: 'Lobster', cursive;
       outline:none;
       padding-left:3em;
       border-color:white;
-      background-image:linear-gradient(black, lightgreen, black);
+      background-image:linear-gradient(  rgb(255, 255, 255), #04c225, black);
 }
 button:hover{
-    color: rgba(216, 111, 79, 0.965);
+    color:#000;
     transition: 1s;
 }
 .para{
@@ -53,8 +60,10 @@ p{
     margin-top: 30px;
 }
 p:hover{
-    color: rgb(197, 44, 103);
-    transition: 2s;
+    background: -webkit-linear-gradient(#8a7b7b,  #d40a0a, #8a7b7b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 3s;
     text-decoration: underline;
     text-decoration-color: rgb(235, 178, 103);
     

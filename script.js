@@ -1,5 +1,6 @@
 let randomNumber = parseInt(Math.random() * 100);
-let trySelf = 0
+let trySelf = 0;
+let sound = new Audio("sound/joker.mp3");
 function easyLevel() {
     let jokerNumber = document.querySelector("input").value;
     trySelf++;
@@ -7,6 +8,7 @@ function easyLevel() {
         alert("Joker Says Enter Your Number");
     } else {
         if (jokerNumber > randomNumber) {
+            sound.play();
             alert("Joker Says To Big");
         } else if (jokerNumber < randomNumber) {
             alert("You Coming Soon To Beat Joker Score");
