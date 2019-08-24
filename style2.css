@@ -7,7 +7,7 @@ body{
     background-position: left bottom, right top;
 }
 h1{
-    font-family: 'Metal Mania', cursive;;
+    font-family: 'Amarante', cursive;;
     font-size:4em;
     letter-spacing: 5px;
     color:#cabdee;
@@ -16,7 +16,7 @@ h1{
     text-decoration-line: underline;
 }
 h2{
-    font-family: 'Metal Mania', cursive;;
+    font-family: 'Amarante', cursive;;
     font-size:3em;
     margin:0px;
     margin-top: 30px;
@@ -33,7 +33,7 @@ button{
       margin-top:50px;
       border-radius:100px;
       font-size:2.2em;
-      font-family: 'Metal Mania', cursive;
+      font-family: 'Amarante', cursive;
       outline:none;
       border-color:white;
       padding-bottom: 10px;
@@ -48,7 +48,7 @@ button{
         margin-left:23rem;
         text-align: center;
         font-size:2.5em;
-        font-family: 'Metal Mania', cursive;
+        font-family: 'Amarante', cursive;
         outline:none;
         /* display:inline-block; */
         background-image: linear-gradient(#8c18cf, white);
